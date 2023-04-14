@@ -80,11 +80,11 @@ author = Author.objects.order_by('-ratingAuthor')[:1][0] author.authorUser.usern
 10. Вывести дату добавления, username автора, рейтинг, заголовок и превью лучшей статьи, основываясь на лайках/дислайках к этой статье.
 b =Post.objects.order_by('-rating')
 >>> for i in b[:1]:
-...     i.categoryType
-...     i.author.ratingAuthor
-...     i.rating
-...     i.title
-...     i.preview()
+        i.categoryType
+        i.author.ratingAuthor
+        i.rating
+        i.title
+        i.preview()
 
 
 11. Вывести все комментарии (дата, пользователь, рейтинг, текст) к этой статье.
